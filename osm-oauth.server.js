@@ -29,13 +29,15 @@ OAuth.registerService('openstreetmap', 1, urls, function(oauthBinding) {
     accessToken: OAuth.sealSecret(oauthBinding.accessToken),
     accessTokenSecret: OAuth.sealSecret(oauthBinding.accessTokenSecret)
   };
+
   return {
     serviceData: serviceData,
     options: {
       profile: {
         username: identity.$.display_name,
+        picture: (identity.img && identity.img[0]) ? identity.img[0].$.href : '',
         description: identity.description[0],
-        languages: identity.languages,
+        languages: identity.languages.length && identity.languages[0].lang,
         accountCreatedAt: identity.$.account_created
       }
     }
