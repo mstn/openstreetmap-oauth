@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mstn:openstreetmap-oauth',
-  version: '0.0.1',
+  version: '0.1.0',
   summary: 'OpenStreetMap OAuth flow',
   git: 'https://github.com/mstn/openstreetmap-oauth',
   documentation: 'README.md'
