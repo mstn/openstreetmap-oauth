@@ -1,6 +1,6 @@
 {
   "name": "mstn:openstreetmap-oauth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "osm-oauth.client.js",
   "dependencies": {
