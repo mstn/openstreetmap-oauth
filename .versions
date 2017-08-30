@@ -35,7 +35,7 @@ modules@0.9.4
 modules-runtime@0.8.0
 mongo@1.1.22
 mongo-id@1.0.6
-mstn:openstreetmap-oauth@0.0.1
+mstn:openstreetmap-oauth@0.1.1
 npm-mongo@2.2.30
 oauth@1.1.13
 oauth1@1.1.11
