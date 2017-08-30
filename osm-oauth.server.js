@@ -36,6 +36,7 @@ OAuth.registerService('openstreetmap', 1, urls, function(oauthBinding) {
       profile: {
         username: identity.$.display_name,
         picture: (identity.img && identity.img[0]) ? identity.img[0].$.href : '',
+        home: (identity.home && identity.home[0]) ? identity.home[0].$ : null,
         description: identity.description[0],
         languages: identity.languages.length && identity.languages[0].lang,
         accountCreatedAt: identity.$.account_created
